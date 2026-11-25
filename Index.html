@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clicking Game</title>
+</head>
+<body>
+  <h1>Click the Button!</h1>
+  <p>Score: <span id="score">0</span></p>
+
+  <button onclick="addPoint()">Click me!</button>
+
+  <script>
+    let score = 0;
+
+    function addPoint() {
+      score = score + 1;
+      document.getElementById("score").textContent = score;
+    }
+  </script>
+</body>
+</html>
